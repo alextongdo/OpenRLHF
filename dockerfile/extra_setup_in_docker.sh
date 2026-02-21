@@ -7,6 +7,6 @@ set -e  # exit on error
 # Get the absolute path of the project directory
 echo "🔧 Setting up project environment..."
 PROJECT_DIR=$(realpath "$(dirname "$(pwd)")")
-pip install -e "${PROJECT_DIR}" --no-deps
+pip install -e "${PROJECT_DIR}[vllm_latest]" --no-deps
 
 echo "✅ Setup complete!"
